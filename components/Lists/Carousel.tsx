@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Title from './Title';
+import Title from '../Title';
 
 interface CarouselProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
     children: React.ReactChildren[] | React.ReactElement[],
@@ -19,7 +19,7 @@ export default function Testimonials({ title = '', children, ...props }: Carouse
 
     return (
         <div {...props} className={`max-w-7xl mx-auto ${props.className}`}>
-            <Title className="font-bold text-center tracking-tight">{title}</Title>
+            <Title className="text-center tracking-tight">{title}</Title>
             <section>
                 <figure>
                     <div className={`relative`}>
