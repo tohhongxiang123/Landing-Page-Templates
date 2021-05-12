@@ -12,7 +12,7 @@ export default function WaveContainer({ children, topGradient = 'zero', bottomGr
 
     const clipPath = `polygon(${topClipPath}, ${bottomClipPath})`
     return (
-        <BaseContainer {...props} className={`py-48 ${props.className}`} style={{ clipPath: clipPath }}>
+        <BaseContainer {...props as any} className={`py-48 ${props.className}`} style={{ clipPath: clipPath }}>
             <div>
                 {children}
             </div>
