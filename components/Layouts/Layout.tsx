@@ -10,7 +10,7 @@ export default function Layout({ children }) {
                 <Link href="#"><p className="cursor-pointer">Contact Us</p></Link>
             </TopNavbar>
             {children}
-            <Footer />
+            <Footer className="flex justify-center items-center" />
         </div>
     )
 }

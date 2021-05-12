@@ -17,16 +17,16 @@ export default function ListSection({ listItems = [], ...props }: ListSectionPro
                 <ul className={`space-y-12`}>
                     {listItems.map((item, index) => (
                         <li className={`flex -mx-4`} key={item.title}>
-                            <div className={`px-4`}>
+                            <div className={`px-2 sm:px-4`}>
                                 <span
                                     className={`flex w-16 h-16 mx-auto items-center
-                            justify-center text-2xl font-bold rounded-full
+                            justify-center text-xl sm:text-2xl font-bold rounded-full
                             bg-blue-50 text-blue-500`}
                                 >
                                     {index + 1}
                                 </span>
                             </div>
-                            <div className={`px-4`}>
+                            <div className={`sm:px-4`}>
                                 {item.title && <h3 className={`my-4 text-xl font-semibold`}>{item.title}</h3>}
                                 {item.description && <p className={`text-gray-500 leading-loose`}>{item.description}</p>}
                             </div>
