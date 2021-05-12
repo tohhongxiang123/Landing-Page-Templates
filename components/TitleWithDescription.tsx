@@ -8,7 +8,7 @@ interface TitleWithDescriptionProps extends React.DetailedHTMLProps<React.HTMLAt
     alignment?: 'left' | 'right' | 'center',
 }
 
-export default function SmallTitleWithDescription({ title, description = '', size = 'large', alignment = 'center', children, ...props }: TitleWithDescriptionProps) {
+export default function TitleWithDescription({ title, description = '', size = 'large', alignment = 'center', children, ...props }: TitleWithDescriptionProps) {
     const paragraphClasses = size === 'large' ? 'text-lg leading-relaxed' : 'text-base'
     const alignmentClasses = alignment === 'left' ? 'items-start justify-start text-left' : alignment === 'right' ? 'items-end justify-end text-right' : 'items-center justify-center text-center'
     const widthClasses = size === 'large' ? 'max-w-3xl' : 'max-w-sm'

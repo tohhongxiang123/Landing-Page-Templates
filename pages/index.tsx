@@ -32,10 +32,10 @@ export default function Home() {
 						description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 					/>
 				</div>
-				<img src="img2.jpg" />
+				<img src="/img2.jpg" />
 			</Container>
 			<Container columns={2}>
-				<img src="img3.jpg" />
+				<img src="/img3.jpg" />
 				<div className="p-8">
 					<TitleWithDescription
 						alignment="left"
@@ -47,9 +47,9 @@ export default function Home() {
 			<WaveContainer className="bg-gray-100">
 				<Title>Brands We Work With</Title>
 				<HorizontalList>
-					<img width={128} height={128} src="intel.svg" />
-					<img width={128} height={128} src="amd.svg" />
-					<img width={128} height={128} src="nvidia.svg" />
+					<img width={128} height={128} src="/intel.svg" />
+					<img width={128} height={128} src="/amd.svg" />
+					<img width={128} height={128} src="/nvidia.svg" />
 				</HorizontalList>
 			</WaveContainer>
 			<Container>
@@ -68,7 +68,7 @@ export default function Home() {
 			<Container className="bg-gray-50">
 				<Title>What You Are Getting</Title>
 				<Container columns={2}>
-					<img src="img4.jpg" />
+					<img src="/img4.jpg" />
 					<OrderedList
 						title="What You Deserve"
 						className="bg-gray-50"
@@ -121,7 +121,7 @@ export default function Home() {
 				/>
 			</SlantedContainer>
 			<Container columns={2}>
-				<img src="img5.png" />
+				<img src="/img5.png" />
 				<div className="p-8">
 					<TitleWithDescription
 						alignment="left"
@@ -143,21 +143,21 @@ export default function Home() {
 					listItems={[
 						{
 							title: `Designers`,
-							icon: 'icon1.svg',
+							icon: '/icon1.svg',
 							description: `Officia et fugiat mollit qui. Dolor elit aliqua voluptate ipsum
 					  excepteur cillum consequat consectetur duis magna qui eu consequat occaecat.
 					  Deserunt nisi sit.`,
 						},
 						{
 							title: `Developers`,
-							icon: 'icon2.svg',
+							icon: '/icon2.svg',
 							description: `Pariatur consectetur laboris exercitation duis laboris.
 					  Commodo duis fugiat magna fugiat et ut anim elit. Tempor aute ex qui
 					  tempor tempor.`,
 						},
 						{
 							title: `Product owners`,
-							icon: 'icon3.svg',
+							icon: '/icon3.svg',
 							description: `Ullamco consectetur ipsum eiusmod nisi adipisicing sint anim
 					  dolore aute excepteur. Voluptate ea ullamco sunt eu elit qui aliquip.
 					  Adipisicing.`,

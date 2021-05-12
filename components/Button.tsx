@@ -31,7 +31,7 @@ function getClassesWithColor(color: ButtonProps['color']) {
         case 'danger':
             return 'bg-red-500 hover:bg-red-700 text-white'
         case 'success':
-            return 'bg-green-500 hover:bg-green-600 text-gray-800'
+            return 'bg-green-500 hover:bg-green-600 text-white'
         default:
             return 'bg-transparent hover:bg-gray-200 text-gray-800'
     }

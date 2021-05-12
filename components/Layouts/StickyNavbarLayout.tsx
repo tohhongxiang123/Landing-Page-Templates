@@ -8,13 +8,13 @@ interface LayoutProps {
     children: React.ReactElement | React.ReactElement[]
 }
 
-export default function Layout({ children, title = 'Business' }: LayoutProps) {
+export default function StickNavbarLayout({ children, title = 'Business' }: LayoutProps) {
     return (
         <div>
             <Head>
                 <title>{title}</title>
             </Head>
-            <TopNavbar>
+            <TopNavbar className="sticky top-0">
                 <Link href="#"><p className="text-2xl font-bold cursor-pointer">Business</p></Link>
                 <Link href="#"><p className="cursor-pointer">Contact Us</p></Link>
             </TopNavbar>
