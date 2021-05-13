@@ -1,7 +1,7 @@
 import Footer from "../Footer";
 import TopNavbar from "../TopNavbar";
-import Link from 'next/link'
 import Head from 'next/head'
+import ActiveLink from "../ActiveLink";
 
 interface LayoutProps {
     title?: string
@@ -15,8 +15,9 @@ export default function Layout({ children, title = 'Seshuri' }: LayoutProps) {
                 <title>{title}</title>
             </Head>
             <TopNavbar>
-                <Link href="#"><p className="cursor-pointer">Contact Us</p></Link>
-                <Link href="#"><p className="cursor-pointer">Learn More</p></Link>
+                <ActiveLink href="/templates/1"><p className="cursor-pointer">Template 1</p></ActiveLink>
+                <ActiveLink href="/templates/2"><p className="cursor-pointer">Template 2</p></ActiveLink>
+                <ActiveLink href="/templates/3"><p className="cursor-pointer">Template 3</p></ActiveLink>
             </TopNavbar>
             {children}
             <Footer className="flex justify-center items-center" />

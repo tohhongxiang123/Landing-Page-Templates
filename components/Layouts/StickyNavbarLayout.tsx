@@ -2,6 +2,7 @@ import Footer from "../Footer";
 import TopNavbar from "../TopNavbar";
 import Link from 'next/link'
 import Head from 'next/head'
+import ActiveLink from "../ActiveLink";
 
 interface LayoutProps {
     title?: string
@@ -14,9 +15,10 @@ export default function StickNavbarLayout({ children, title = 'Business' }: Layo
             <Head>
                 <title>{title}</title>
             </Head>
-            <TopNavbar className="sticky top-0">
-                <Link href="#"><p className="text-2xl font-bold cursor-pointer">Business</p></Link>
-                <Link href="#"><p className="cursor-pointer">Contact Us</p></Link>
+            <TopNavbar className="sticky top-0 bg-gray-50">
+                <ActiveLink href="/templates/1"><p className="cursor-pointer">Template 1</p></ActiveLink>
+                <ActiveLink href="/templates/2"><p className="cursor-pointer">Template 2</p></ActiveLink>
+                <ActiveLink href="/templates/3"><p className="cursor-pointer">Template 3</p></ActiveLink>
             </TopNavbar>
             {children}
             <Footer className="flex justify-center items-center" />
