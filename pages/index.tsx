@@ -13,15 +13,16 @@ import SlantedContainer from '../components/Containers/SlantedContainer'
 
 export default function Home() {
 	return (
-		<Layout>
+		<Layout title="Seshuri">
 			<Container
-				className="bg-gray-50 lg:py-64 text-white"
+				className="bg-gray-50 py-32 text-white"
 				style={{
 					background: 'linear-gradient(0deg, #00000088 30%, #ffffff44 100%), url("img1.jpg") center center no-repeat',
-					backgroundPosition: '50%, initial'
+					backgroundPosition: '50%, initial',
+					backgroundSize: 'cover'
 				}}
 			>
-				<Title>Making Life Better at Work</Title>
+				<Title>Designing Your Webpages</Title>
 				<Button color="primary">Learn More</Button>
 			</Container>
 			<Container columns={2}>
