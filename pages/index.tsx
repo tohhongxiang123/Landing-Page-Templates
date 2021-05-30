@@ -10,6 +10,7 @@ import HorizontalList from "../components/Lists/HorizontalList";
 import Quote from "../components/Quote";
 import WaveContainer from "../components/Containers/WaveContainer";
 import SlantedContainer from '../components/Containers/SlantedContainer'
+import Subtitle from "../components/Subtitle";
 
 export default function Home() {
 	return (
@@ -23,6 +24,7 @@ export default function Home() {
 				}}
 			>
 				<Title>Designing Your Webpages</Title>
+				<Subtitle><i>Making Landing Pages beautiful</i></Subtitle>
 				<Button color="primary">Learn More</Button>
 			</Container>
 			<Container columns={2}>

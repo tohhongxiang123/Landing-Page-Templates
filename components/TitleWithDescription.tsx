@@ -16,7 +16,7 @@ export default function TitleWithDescription({ title, description = '', size = '
     return (
         <div {...props} className={`flex flex-col ${widthClasses} ${alignmentClasses} ${props.className}`}>
             <Title variant={size === 'large' ? "h1" : "h4"} className={`tracking-tight`}>{title}</Title>
-            {description && <p className={`${paragraphClasses} text-gray-500 tracking-tight`}>{description}</p>}
+            {description && <p className={`${paragraphClasses} opacity-80 tracking-tight`}>{description}</p>}
             {children}
         </div>
     )
